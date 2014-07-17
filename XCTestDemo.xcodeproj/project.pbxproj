@@ -199,11 +199,6 @@
 				CLASSPREFIX = HC;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Hosted CI";
-				TargetAttributes = {
-					D542C87C197808DA0002D836 = {
-						TestTargetID = D542C85B197808DA0002D836;
-					};
-				};
 			};
 			buildConfigurationList = D542C857197808DA0002D836 /* Build configuration list for PBXProject "XCTestDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -401,7 +396,6 @@
 		D542C892197808DA0002D836 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/XCTestDemo.app/XCTestDemo";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -415,7 +409,6 @@
 				);
 				INFOPLIST_FILE = "XCTestDemoTests/XCTestDemoTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -423,7 +416,6 @@
 		D542C893197808DA0002D836 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/XCTestDemo.app/XCTestDemo";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -433,7 +425,6 @@
 				GCC_PREFIX_HEADER = "XCTestDemo/XCTestDemo-Prefix.pch";
 				INFOPLIST_FILE = "XCTestDemoTests/XCTestDemoTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -457,6 +448,7 @@
 				D542C890197808DA0002D836 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D542C891197808DA0002D836 /* Build configuration list for PBXNativeTarget "XCTestDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +457,7 @@
 				D542C893197808DA0002D836 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
